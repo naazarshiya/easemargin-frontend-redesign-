@@ -1,0 +1,231 @@
+ 
+.pricing-section {
+  padding: 80px 20px;
+  background: #90e1e8;     
+  border-radius: 40px;
+  max-width: 1300px;
+  margin: 60px auto;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+
+ 
+.pricing-header  {
+  text-align: center;
+}
+.cylinder {
+  background: rgba(118, 213, 239, 0.311);
+  padding: 6px 18px;
+  border-radius: 25px;
+  color: #3852c8;
+  font-weight: 600;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+}
+
+.pricing-header h2 {
+  
+  margin: 12px 0 5px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.pricing-header p {
+  color: #222;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+ 
+.billing-toggle {
+  display: inline-flex;
+  background: rgba(159, 84, 244, 0.523);
+  padding: 6px;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 45px;
+  gap: 10px;
+}
+
+.billing-toggle button {
+  padding: 8px 22px;
+  border-radius: 20px;
+  border: none;
+  background: transparent;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.billing-toggle button.active {
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+ 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+ 
+.pricing-box {
+  width: 100%;
+  max-width: 340px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 40px 35px;
+  border: 1px solid rgba(255,255,255,0.7);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+
+  cursor: pointer;
+  perspective: 1000px;
+
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+  
+  animation: floatCard 4s ease-in-out infinite alternate;
+}
+
+ 
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+ 
+.pricing-box::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 27px;
+  padding: 3px;
+  background: linear-gradient(135deg, #7c5cff, #00c6ff, #ff7ee9);
+  background-size: 300% 300%;
+  animation: neonGlow 6s ease infinite;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+@keyframes neonGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.pricing-box:hover::before {
+  opacity: 1;
+}
+
+ 
+.pricing-box:hover {
+  transform: rotateY(10deg) rotateX(6deg) translateY(-10px) scale(1.03);
+}
+
+ 
+.pricing-box.selected {
+  background: rgba(255,255,255,0.92);
+  border: 2px solid #7c5cff;
+  box-shadow: 0 14px 35px rgba(124,92,255,0.45);
+}
+
+.pricing-box.selected::before {
+  opacity: 1;
+}
+
+ 
+.pricing-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.pricing-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6a4bff;
+  margin-bottom: 6px;
+}
+
+.pricing-box.selected h4 {
+  color: #4b2bff;
+}
+
+.pricing-box .billing {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+ 
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.pricing-box ul li {
+  font-size: 15px;
+  color: #444;
+  margin: 8px 0;
+}
+ 
+.demo-btn {
+  background: #6a4bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.demo-btn:hover {
+  background: #5838e6;
+}
+
+.pricing-box.selected .demo-btn {
+  background: #4b2bff;
+  color: #fff;
+}
+ 
+.pricing-section .pricing-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;    
+  justify-content: center !important;
+  text-align: center !important;      
+  width: 100% !important;
+  margin: 0 auto !important;
+  gap: 10px;
+}
+
+ 
+.pricing-section .pricing-header h2,
+.pricing-section .pricing-header p {
+  text-align: center !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  float: none !important;
+  width: auto !important;
+}
+ 
+.pricing-section .pricing-header::after {
+  content: "" ;
+  display: block;
+  clear: both;
+}

@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +32,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* ⭐ Keep your background as it is */
+body {
+  background: radial-gradient(circle at top left, #c3a3ff, #a5b4fc, #fbcfe8);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+

@@ -1,0 +1,160 @@
+.security-section {
+  position: relative;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #f4f1ff 0%, #e8e3ff 70%, #ffffff 100%);
+  overflow: hidden;
+}
+
+ 
+.security-section::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180%;
+  height: 140px;
+  background: radial-gradient(circle at bottom, #e5dcff 0%, #d7cbff 60%, #ece7ff 100%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 1;
+  animation: waveMove 8s ease-in-out infinite alternate;
+}
+
+ 
+@keyframes waveMove {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+ 
+.security-header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 3rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #e7ecff;
+  color: #2f55d4;
+  font-weight: 600;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.security-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b186a;
+}
+
+.security-subtitle {
+  color: #4e3e8b;
+  max-width: 750px;
+  margin: 0.8rem auto 2.5rem;
+  line-height: 1.6;
+}
+
+ 
+.security-boxes {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+ 
+.security-box {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  width: 320px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.security-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+ 
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon.lock {
+  color: #2f55d4;
+}
+
+.icon.tick {
+  color: #28a745;
+}
+
+.icon.graph {
+  color: #f39c12;
+}
+ 
+.security-box h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.security-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.security-box ul li {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+ 
+.security-section,
+.security-header,
+.security-title,
+.security-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+ 
+.security-header .badge {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: inline-block !important;
+}
+
+ 
+.security-boxes {
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+ 
+.security-box {
+  text-align: left !important;
+}

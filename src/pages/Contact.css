@@ -1,0 +1,131 @@
+ 
+.contact-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom right, #7f6bff, #6543ff 60%, white 60%);
+}
+
+ 
+.contact-hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  color: white;
+}
+
+.contact-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.contact-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+ .contact-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+ 
+.contact-form-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form-card label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.contact-form-card textarea {
+  height: 120px;
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2d66f7;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #003fe0;
+}
+
+/* CONTACT INFO */
+.contact-info-box {
+  flex: 0.8;
+  padding-top: 20px;
+}
+
+.contact-info-box h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.info-icon {
+  font-size: 26px;
+  color: #8eff43;
+}
+
+ .social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 32px;
+  color: #6543ff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: #000;
+}
+ 
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .contact-wrapper {
+    background: linear-gradient(to bottom, #7f6bff, #6543ff 40%, white 40%);
+  }
+}

@@ -1,0 +1,163 @@
+:root {
+  --blue: #007bff;
+  --orange: #ff9800;
+  --light-bg: #f0f7ff;
+  --highlight-bg: #fff8e1;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  --pink-card: #fdeef4;
+  --green-card: #eafbea;
+  --purple-card: #f3e8ff;
+  --yellow-card: #fff8e1;
+  --blue-card: #eaf4ff;
+}
+
+ 
+.jobwork-page {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
+  background-color: #fff;
+}
+
+ 
+.section,
+.highlight-section {
+  padding: 60px 20px;
+}
+
+.highlight-section {
+  background: linear-gradient(90deg, var(--light-bg), var(--highlight-bg));
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+ 
+.section h2,
+.highlight-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+ 
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 22px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.benefit-grid li {
+  background: var(--blue-card);
+  padding: 20px 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid transparent;
+}
+
+.benefit-grid li h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.benefit-grid li p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.benefit-grid li em {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+ 
+.benefit-grid li:nth-child(1) {
+  background: var(--pink-card);
+  border-left-color: #d81b60;
+}
+.benefit-grid li:nth-child(2) {
+  background: var(--green-card);
+  border-left-color: #2e7d32;
+}
+.benefit-grid li:nth-child(3) {
+  background: var(--purple-card);
+  border-left-color: #6a1b9a;
+}
+.benefit-grid li:nth-child(4) {
+  background: var(--blue-card);
+  border-left-color: #1565c0;
+}
+.benefit-grid li:nth-child(5) {
+  background: var(--yellow-card);
+  border-left-color: #f9a825;
+}
+
+.benefit-grid li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.why-choose .benefit-grid li {
+  background: #e8ffe8;
+  border-left: 5px solid #2e7d32;
+  color: #1b4332;
+}
+ 
+.cta-section {
+  background: linear-gradient(90deg, var(--highlight-bg), var(--light-bg));
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.cta-box {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px 30px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+ 
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-orange {
+  background: var(--orange);
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background: #e68900;
+  transform: translateY(-3px);
+}
+
+.btn-orange-outline {
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  background: transparent;
+}
+
+.btn-orange-outline:hover {
+  background: var(--orange);
+  color: #fff;
+}

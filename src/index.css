@@ -1,13 +1,37 @@
-body {
+/* ==========================
+   GLOBAL RESET
+========================== */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ==========================
+   GLOBAL BODY STYLE
+========================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========================
+   PAGE HERO SEPARATION 
+   FOR NON-HOME PAGES
+========================== */
+.page-other .page-hero,
+.page-other .hero-section,
+.page-other .inventory-hero,
+.page-other .invoice-hero,
+.page-other .sales-hero,
+.page-other .purchase-hero,
+.page-other .production-hero,
+.page-other .material-hero,
+.page-other .jobwork-hero {
+  margin-top: 120px !important;
 }

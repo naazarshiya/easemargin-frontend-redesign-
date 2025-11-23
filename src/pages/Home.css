@@ -1,0 +1,94 @@
+ 
+.home-page {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+ 
+
+ 
+.home-page section {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+
+ 
+.home-page .clients-container,
+.home-page .why-choose-section,
+.home-page .why-choose-us,
+.home-page .pricing-section,
+.home-page .security-section,
+.home-page .transform-section {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+
+ 
+.home-page h2,
+.home-page .clients-title,
+.home-page .why-title,
+.home-page .security-title,
+.home-page .whyus-title {
+    text-align: center !important;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+}
+
+
+ 
+
+.home-page p,
+.home-page .clients-subtitle,
+.home-page .why-subtitle,
+.home-page .security-subtitle,
+.home-page .whyus-subtitle {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+ 
+
+/* Clients */
+.home-page .circle-layout,
+.home-page .row {
+    justify-content: center !important;
+}
+
+ 
+.home-page .feature-slider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+ 
+.home-page .pricing-grid {
+    justify-content: center !important;
+}
+
+ 
+.home-page .whyus-cards {
+    justify-content: center !important;
+}
+
+ 
+.home-page .security-boxes {
+    justify-content: center !important;
+}
+
+
+ 
+@media (max-width: 768px) {
+    .home-page h2,
+    .home-page p {
+        text-align: center !important;
+    }
+}

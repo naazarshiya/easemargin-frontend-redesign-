@@ -1,0 +1,139 @@
+ 
+
+ 
+.clients-wrapper {
+  width: 100%;
+  background: #ffffff;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+ 
+.clients-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-radius: 40px;
+  background: #FEFAF3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+ 
+.clients-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #3d2c8d;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+ 
+.clients-subtitle {
+  font-size: 1rem;
+  color: #5b46b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+ 
+.circle-layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+ .float-hex {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+ 
+.colored-hex {
+  width: 160px;
+  aspect-ratio: 1.1547;
+  clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease;
+}
+ 
+.inner-hex {
+  width: 75%;
+  height: 75%;
+  clip-path: inherit;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.inner-hex img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.colored-hex:hover img {
+  transform: scale(1.1);
+}
+
+ 
+@media (max-width: 992px) {
+  .colored-hex {
+    width: 120px;
+  }
+  .row {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .colored-hex {
+    width: 100px;
+  }
+  .row {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .circle-layout {
+    gap: 12px;
+  }
+}
+
+ 
+.clients-title,
+.clients-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}

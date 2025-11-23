@@ -1,0 +1,146 @@
+ 
+.why-choose-us {
+  text-align: center;
+  padding: 6rem 2rem 8rem;
+  background: linear-gradient(180deg, #f4f1ff 0%, #e8e3ff 70%, #ffffff 100%);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+ 
+.why-choose-us::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 450px;
+  background: #e8e3ff;
+  border-radius: 0 0 450px 450px;
+  z-index: 0;
+}
+
+ 
+.whyus-header {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+ 
+.whyus-pill {
+  display: inline-block;
+  background: #e7ecff;
+  color: #4b2bff;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+ 
+.whyus-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e1e2f;
+}
+
+.whyus-title strong {
+  color: #7b4fff;
+}
+
+ 
+.whyus-subtitle {
+  color: #4e3e8b;
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+ 
+.whyus-cards {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+.whyus-card {
+  background: #ffffff;
+  padding: 2.4rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 360px;
+  text-align: left;
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+.whyus-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(123, 79, 255, 0.25);
+}
+
+ 
+.whyus-img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.whyus-card:hover .whyus-img {
+  transform: scale(1.12);
+}
+
+ 
+.whyus-card h4 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.7rem;
+}
+
+.whyus-card p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+ 
+@media (max-width: 900px) {
+  .whyus-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .whyus-cards {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+.why-choose-us,
+.whyus-title,
+.whyus-subtitle {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+
+.whyus-subtitle {
+  max-width: 750px !important;
+}
