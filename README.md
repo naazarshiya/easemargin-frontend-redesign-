@@ -4,9 +4,8 @@ This project is a complete UI/UX redesign of the EaseMargin website, created as 
 
 ---
 
-## 🌐 Live Demo  
-*(Add link when deployed)*  
-👉 **Demo:** Coming Soon
+## 🌐 Live Demo    
+👉  https://easemargin-frontend-redesign.vercel.app
 
 ---
 
